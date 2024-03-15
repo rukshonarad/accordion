@@ -1,0 +1,31 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+.accordion {
+    border: 1px solid black;
+}
+.accordion__header {
+    height: 48px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chevron {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.chevron.down {
+    border-top: 5px solid #000;
+    transition: transform 0.3s ease;
+}
+
+.chevron.up {
+    border-bottom: 5px solid #000;
+    transition: transform 0.3s ease;
+}
